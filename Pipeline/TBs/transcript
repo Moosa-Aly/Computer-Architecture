@@ -1,0 +1,56 @@
+# vsim -c work.tb_with_hazard -do "run -all; quit" 
+# Start time: 08:43:22 on Jun 04,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.tb_with_hazard(fast)
+# run -all
+# =================================================
+# Starting Simulation for with_hazard.hex
+# Cycle 0: Inst=00000013, Inst_mem=00000013, fwdA=1, fwdB=0, wdata_mem=         0, wb_data=         0, sel_B=1, reg_wr_mem=0
+# Cycle 1: Inst=00600093, Inst_mem=00000013, fwdA=1, fwdB=0, wdata_mem=         0, wb_data=         0, sel_B=1, reg_wr_mem=1
+# Cycle 2: Inst=00200113, Inst_mem=00600093, fwdA=0, fwdB=0, wdata_mem=         0, wb_data=         6, sel_B=1, reg_wr_mem=1
+# Cycle 3: Inst=00208233, Inst_mem=00200113, fwdA=0, fwdB=1, wdata_mem=         0, wb_data=         2, sel_B=0, reg_wr_mem=1
+# Cycle 4: Inst=02402023, Inst_mem=00208233, fwdA=0, fwdB=1, wdata_mem=         2, wb_data=         8, sel_B=1, reg_wr_mem=1
+# Cycle 5: Inst=02002483, Inst_mem=02402023, fwdA=1, fwdB=0, wdata_mem=         8, wb_data=         0, sel_B=1, reg_wr_mem=0
+# Cycle 6: Inst=002482b3, Inst_mem=02002483, fwdA=1, fwdB=0, wdata_mem=         0, wb_data=         8, sel_B=0, reg_wr_mem=1
+# Cycle 7: Inst=002085b3, Inst_mem=002482b3, fwdA=0, fwdB=0, wdata_mem=         2, wb_data=        10, sel_B=0, reg_wr_mem=1
+# Cycle 8: Inst=00b20663, Inst_mem=002085b3, fwdA=0, fwdB=1, wdata_mem=         2, wb_data=         8, sel_B=1, reg_wr_mem=1
+# Cycle 9: Inst=00000013, Inst_mem=00b20663, fwdA=0, fwdB=0, wdata_mem=         8, wb_data=         0, sel_B=1, reg_wr_mem=0
+# Cycle 10: Inst=0044e133, Inst_mem=00000013, fwdA=0, fwdB=0, wdata_mem=         0, wb_data=         0, sel_B=0, reg_wr_mem=1
+# Cycle 11: Inst=00000000, Inst_mem=0044e133, fwdA=0, fwdB=0, wdata_mem=         8, wb_data=         8, sel_B=0, reg_wr_mem=1
+# Cycle 12: Inst=00000000, Inst_mem=00000000, fwdA=1, fwdB=0, wdata_mem=         0, wb_data=         0, sel_B=0, reg_wr_mem=0
+# Cycle 13: Inst=00000000, Inst_mem=00000000, fwdA=1, fwdB=0, wdata_mem=         0, wb_data=         0, sel_B=0, reg_wr_mem=0
+# Cycle 14: Inst=00000000, Inst_mem=00000000, fwdA=1, fwdB=0, wdata_mem=         0, wb_data=         0, sel_B=0, reg_wr_mem=0
+# x1  = 6
+# x2  = 8
+# x3  = 0
+# x4  = 8
+# x5  = 10
+# x6  = 0
+# x8  = 0
+# x9  = 8
+# x11 = 8
+# Memory[0x10] = 0
+# Memory[0x20] = 8
+# =================================================
+# ** Note: $stop    : tb_with_hazard.sv(46)
+#    Time: 810 ns  Iteration: 0  Instance: /tb_with_hazard
+# Break at tb_with_hazard.sv line 46
+# Stopped at tb_with_hazard.sv line 46
+#  quit
+# End time: 08:43:23 on Jun 04,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
